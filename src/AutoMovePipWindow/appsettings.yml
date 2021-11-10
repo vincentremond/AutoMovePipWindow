@@ -11,7 +11,7 @@ Browsers:
     WindowClassName: Chrome_WidgetWin_2
     WindowTitle: ''
     HideWindow: false
-  Chrome:
+  Chrome: # And also Edge (it uses the same infos)
     WindowClassName: Chrome_WidgetWin_1
     WindowTitle: Picture in picture
     HideWindow: true
