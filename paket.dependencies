@@ -1,7 +1,7 @@
 source https://api.nuget.org/v3/index.json
 
 storage: none
-framework: net5.0-windows
+framework: auto-detect
 nuget Microsoft.Extensions.Configuration
 nuget Microsoft.Extensions.DependencyInjection
 nuget Microsoft.Extensions.Logging.Console
