@@ -18,25 +18,25 @@ Browsers:
 Screens:
   SingleScreen:
     Conditions:
-      - { Primary: true }
+    - { Primary: true }
     Positions:
-      # - { Cursor: { X: 0, Y: 0.5, Width: 0.4, Height: 0.5 }, Target: { Position: BottomRight } }
-      # - { Cursor: { X: 0.6, Y: 0.5, Width: 0.4, Height: 0.5 }, Target: { Position: BottomLeft } }
-      - { Cursor: { X: 0, Y: 0.6, Width: 0.4, Height: 0.4 }, Target: { Position: TopRight } }
-      - { Cursor: { X: 0.6, Y: 0.6, Width: 0.4, Height: 0.4 }, Target: { Position: TopLeft } }
-      - { Cursor: { X: 0, Y: 0, Width: 0.4, Height: 0.6 }, Target: { Position: BottomRight } }
-      - { Cursor: { X: 0.6, Y: 0, Width: 0.4, Height: 0.6 }, Target: { Position: BottomLeft } }
+    # - { Cursor: { X: 0, Y: 0.5, Width: 0.4, Height: 0.5 }, Target: { Position: BottomRight } }
+    # - { Cursor: { X: 0.6, Y: 0.5, Width: 0.4, Height: 0.5 }, Target: { Position: BottomLeft } }
+    - { Cursor: { X: 0, Y: 0.6, Width: 0.4, Height: 0.4 }, Target: { Position: TopRight } }
+    - { Cursor: { X: 0.6, Y: 0.6, Width: 0.4, Height: 0.4 }, Target: { Position: TopLeft } }
+    - { Cursor: { X: 0, Y: 0, Width: 0.4, Height: 0.6 }, Target: { Position: BottomRight } }
+    - { Cursor: { X: 0.6, Y: 0, Width: 0.4, Height: 0.6 }, Target: { Position: BottomLeft } }
   Dual--SecondaryLeft:
     Conditions:
-      - { Primary: true }
-      - { Primary: false, Expression: "X < 0" }
+    - { Primary: true }
+    - { Primary: false, Expression: "X < 0" }
     Positions:
-      - { Cursor: { Screen: 0 }, Target: { Screen: 1, Position: BottomRight, Size: 55*16/9:8 } }
-      - { Cursor: { Screen: 1 }, Target: { Screen: 0, Position: BottomLeft, Size: 35*16/9:8 } }
+    - { Cursor: { Screen: 0 }, Target: { Screen: 1, Position: BottomRight, Size: 55*16/9:8 } }
+    - { Cursor: { Screen: 1 }, Target: { Screen: 0, Position: BottomLeft, Size: 35*16/9:8 } }
   Dual--SecondaryRight:
     Conditions:
-      - { Primary: true }
-      - { Primary: false }
+    - { Primary: true }
+    - { Primary: false }
     Positions:
-      - { Cursor: { Screen: 0 }, Target: { Screen: 1, Position: BottomLeft } }
-      - { Cursor: { Screen: 1 }, Target: { Screen: 0, Position: BottomRight } }
+    - { Cursor: { Screen: 0 }, Target: { Screen: 1, Position: BottomLeft, Size: 35*16/9:8 } }
+    - { Cursor: { Screen: 1 }, Target: { Screen: 0, Position: BottomRight, Size: 55*16/9:8 } }
