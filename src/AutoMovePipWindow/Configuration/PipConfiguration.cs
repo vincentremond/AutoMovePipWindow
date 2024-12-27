@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AutoMovePipWindow.Configuration
+namespace AutoMovePipWindow.Configuration;
+
+[Serializable]
+internal class PipConfiguration
 {
-    [Serializable]
-    internal class PipConfiguration
-    {
-        public SizeConfiguration Size { get; set; }
-        public string TargetBrowser { get; set; }
-        public TimeSpan Interval { get; set; }
-        public bool AllowOverlap { get; set; }
-        public Dictionary<string, BrowserConfiguration> Browsers { get; set; }
-        public Dictionary<string, ScreenConfiguration> Screens { get; set; }
-    }
+    public SizeConfiguration Size { get; set; }
+    public string TargetBrowser { get; set; }
+    public TimeSpan Interval { get; set; }
+    public bool AllowOverlap { get; set; }
+    public Dictionary<string, BrowserConfiguration> Browsers { get; set; }
+    public Dictionary<string, ScreenConfiguration> Screens { get; set; }
 }

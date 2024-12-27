@@ -1,7 +1,6 @@
-﻿namespace AutoMovePipWindow.Contracts
+﻿namespace AutoMovePipWindow.Contracts;
+
+internal interface ISingleInstanceChecker
 {
-    internal interface ISingleInstanceChecker
-    {
-        void KillOtherInstances();
-    }
+    void KillOtherInstances();
 }

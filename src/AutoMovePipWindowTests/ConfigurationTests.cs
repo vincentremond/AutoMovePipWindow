@@ -1,17 +1,16 @@
 using AutoMovePipWindow.Configuration;
 using NUnit.Framework;
 
-namespace AutoMovePipWindowTests
+namespace AutoMovePipWindowTests;
+
+public class ConfigurationTests
 {
-    public class ConfigurationTests
+    [Test]
+    public void TestSizeConfiguration()
     {
-        [Test]
-        public void TestSizeConfiguration()
-        {
-            SizeConfiguration size = "40*16/9:8";
-            Assert.AreEqual(8, size.Margin);
-            Assert.AreEqual(40 * 16, size.Width);
-            Assert.AreEqual(40 * 9, size.Height);
-        }
+        SizeConfiguration size = "40*16/9:8";
+        Assert.That(size.Margin, Is.EqualTo(8));
+        Assert.That(size.Width, Is.EqualTo(40 * 16));
+        Assert.That(size.Height, Is.EqualTo(40 * 9));
     }
 }
