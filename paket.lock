@@ -7,7 +7,7 @@ NUGET
     Microsoft.Extensions.Logging.Configuration (9.0)
     Microsoft.Extensions.Logging.Console (9.0)
     Microsoft.NET.Test.Sdk (17.12)
-    NUnit (4.3.1)
+    NUnit (4.3.2)
     NUnit3TestAdapter (4.6)
     System.CommandLine.DragonFruit (0.4.0-alpha.22272.1)
     YamlDotNet (16.3)
