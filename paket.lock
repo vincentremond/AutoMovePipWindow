@@ -2,13 +2,13 @@ STORAGE: NONE
 RESTRICTION: == net9.0-windows7.0
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    Microsoft.Extensions.Configuration (9.0)
-    Microsoft.Extensions.DependencyInjection (9.0)
-    Microsoft.Extensions.Logging.Configuration (9.0)
-    Microsoft.Extensions.Logging.Console (9.0)
-    Microsoft.NET.Test.Sdk (17.12)
+    Microsoft.Extensions.Configuration (9.0.3)
+    Microsoft.Extensions.DependencyInjection (9.0.3)
+    Microsoft.Extensions.Logging.Configuration (9.0.3)
+    Microsoft.Extensions.Logging.Console (9.0.3)
+    Microsoft.NET.Test.Sdk (17.13)
     NUnit (4.3.2)
-    NUnit3TestAdapter (4.6)
+    NUnit3TestAdapter (5.0)
     System.CommandLine.DragonFruit (0.4.0-alpha.22272.1)
     YamlDotNet (16.3)
-    Z.Expressions.Eval (6.2.4)
+    Z.Expressions.Eval (6.2.8)
