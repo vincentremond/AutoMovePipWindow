@@ -3,36 +3,35 @@ using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace AutoMovePipWindow
+namespace AutoMovePipWindow;
+
+internal class TrayIconContext : ApplicationContext
 {
-    internal class TrayIconContext : ApplicationContext
+    private readonly CancellationTokenSource _cancellationTokenSource;
+    private readonly NotifyIcon _notifyIcon;
+
+    public TrayIconContext(CancellationTokenSource cancellationTokenSource)
     {
-        private readonly CancellationTokenSource _cancellationTokenSource;
-        private readonly NotifyIcon _notifyIcon;
+        _cancellationTokenSource = cancellationTokenSource;
+        _notifyIcon = CreateNotifyIcon();
+    }
 
-        public TrayIconContext(CancellationTokenSource cancellationTokenSource)
+    private NotifyIcon CreateNotifyIcon()
+    {
+        var notifyIcon = new NotifyIcon
         {
-            _cancellationTokenSource = cancellationTokenSource;
-            _notifyIcon = CreateNotifyIcon();
-        }
+            Icon = new Icon("icon.ico"),
+            Text = "AutoMovePipWindow",
+            Visible = true,
+        };
+        notifyIcon.DoubleClick += Exit;
+        return notifyIcon;
+    }
 
-        private NotifyIcon CreateNotifyIcon()
-        {
-            var notifyIcon = new NotifyIcon
-            {
-                Icon = new Icon("icon.ico"),
-                Text = "AutoMovePipWindow",
-                Visible = true,
-            };
-            notifyIcon.DoubleClick += Exit;
-            return notifyIcon;
-        }
-
-        private void Exit(object _, EventArgs __)
-        {
-            _notifyIcon.Visible = false;
-            _cancellationTokenSource.Cancel();
-            Application.Exit();
-        }
+    private void Exit(object _, EventArgs __)
+    {
+        _notifyIcon.Visible = false;
+        _cancellationTokenSource.Cancel();
+        Application.Exit();
     }
 }

@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace AutoMovePipWindow.Configuration
+namespace AutoMovePipWindow.Configuration;
+
+[Serializable]
+internal class ScreenConfiguration
 {
-    [Serializable]
-    internal class ScreenConfiguration
-    {
-        public ConditionsConfiguration[] Conditions { get; set; }
-        public PositionConfiguration[] Positions { get; set; }
-    }
+    public ConditionsConfiguration[] Conditions { get; set; }
+    public PositionConfiguration[] Positions { get; set; }
 }

@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace AutoMovePipWindow.Configuration
+namespace AutoMovePipWindow.Configuration;
+
+[Serializable]
+internal class PositionConfiguration
 {
-    [Serializable]
-    internal class PositionConfiguration
-    {
-        public CursorConfiguration Cursor { get; set; }
-        public TargetConfiguration Target { get; set; }
-    }
+    public CursorConfiguration Cursor { get; set; }
+    public TargetConfiguration Target { get; set; }
 }

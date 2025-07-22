@@ -5,6 +5,7 @@ framework: auto-detect
 nuget Microsoft.Extensions.Configuration
 nuget Microsoft.Extensions.DependencyInjection
 nuget Microsoft.Extensions.Logging.Console
+nuget Microsoft.Extensions.Logging.Configuration
 nuget Microsoft.NET.Test.Sdk
 nuget NUnit
 nuget NUnit3TestAdapter
