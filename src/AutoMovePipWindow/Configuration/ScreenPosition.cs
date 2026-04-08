@@ -15,5 +15,5 @@ internal enum ScreenPosition
     BottomLeft = Bottom | Left,
     BottomRight = Bottom | Right,
     TopLeft = Top | Left,
-    TopRight = Top | Right
+    TopRight = Top | Right,
 }

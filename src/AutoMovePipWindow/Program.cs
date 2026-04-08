@@ -8,13 +8,15 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using AutoMovePipWindow.Contracts;
 using AutoMovePipWindow.Services;
-using Microsoft.Extensions.Configuration;
+using JetBrains.Annotations;
 
 namespace AutoMovePipWindow;
 
+[UsedImplicitly]
 internal static class Program
 {
     [STAThread]
+    [UsedImplicitly]
     public static async Task Main()
     {
         Application.SetHighDpiMode(HighDpiMode.SystemAware);
