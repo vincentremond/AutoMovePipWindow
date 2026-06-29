@@ -2,6 +2,7 @@ source https://api.nuget.org/v3/index.json
 
 storage: none
 framework: auto-detect
+nuget JetBrains.Annotations
 nuget Microsoft.Extensions.Configuration
 nuget Microsoft.Extensions.DependencyInjection
 nuget Microsoft.Extensions.Logging.Console
